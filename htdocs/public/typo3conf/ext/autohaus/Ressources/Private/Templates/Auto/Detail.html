@@ -1,0 +1,65 @@
+<div class="detail">
+    <f:debug>{auto}</f:debug>
+
+    <div>{auto.model}</div>
+    <f:for as="image" each="{auto.image}">
+        <div><f:image image="{image}"/></div>
+    </f:for>
+    <f:for as="video" each="{auto.videoPresentation}">
+        <div><f:media file="{video}"/></div>
+    </f:for>
+    <div>{auto.price}</div>
+    <div>
+        <div class="legende">
+            <div class="booked-status"></div> gebucht
+            <div class="notbooked-status"></div> verfügbar
+
+        </div>
+        <div class="timeslots">
+            <f:for as="month" each="{auto.month}">
+                <div class="month">
+                    <f:switch expression="{month.month}">
+                        <f:case value="1">Januar</f:case>
+                        <f:case value="2">Februar</f:case>
+                        <f:case value="3">März</f:case>
+                        <f:case value="4">April</f:case>
+                        <f:case value="5">Mai</f:case>
+                        <f:case value="6">Juni</f:case>
+                        <f:case value="7">Juli</f:case>
+                        <f:case value="8">August</f:case>
+                        <f:case value="9">September</f:case>
+                        <f:case value="10">Oktober</f:case>
+                        <f:case value="11">November</f:case>
+                        <f:case value="12">Dezember</f:case>
+                    </f:switch>
+
+                    <f:for as="day" each="{month.day}">
+                        <div>{day.day}te</div>
+                        <div class="day">
+                            <f:for as="timeslot" each="{day.timeslot}">
+                                <f:if condition="!{timeslot.booked}">
+                                    <f:then>
+                                        <f:link.action action="form" arguments="{auto:auto, timeslot: timeslot}" >
+                                            <div class="timeslot">
+                                                <f:format.date format="H:i">{timeslot.appointmentStart}</f:format.date>
+                                                -<f:format.date format="H:i">{timeslot.appointmentEnd}</f:format.date>
+                                            </div>
+                                        </f:link.action>
+                                    </f:then>
+                                    <f:else>
+                                        <div class="timeslot-booked">
+                                            <f:format.date format="H:i">{timeslot.appointmentStart}</f:format.date>
+                                            -<f:format.date format="H:i">{timeslot.appointmentEnd}</f:format.date>
+                                        </div>
+                                    </f:else>
+                                </f:if>
+                            </f:for>
+                        </div>
+                    </f:for>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</div>
+
+

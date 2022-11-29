@@ -1,0 +1,11 @@
+<f:be.container>
+    <div>Hier können Sie neue Verfügbarkeiten anlegen</div>
+    <f:form controller="BookingDisposal" action="createBookings" object="{timeFromTo}" name="timeFromTo">
+        <div>Monat</div><f:form.textfield property="month"/>
+        <div>Tag Von</div><f:form.textfield property="dayFrom"/>
+        <div>Tag Bis</div><f:form.textfield property="dayTo"/>
+        <div>Zeit Von</div><f:form.textfield property="timeFrom"/>
+        <div>Zeit Bis</div><f:form.textfield property="timeTo"/>
+        <f:form.submit value="Buchung erstellen"/>
+    </f:form>
+</f:be.container>

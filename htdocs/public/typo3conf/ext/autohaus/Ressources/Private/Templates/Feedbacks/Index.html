@@ -1,0 +1,20 @@
+<table class="tg">
+    <thead>
+    <tr>
+        <th class="tg-0lax">Name</th>
+        <th class="tg-0lax">E-Mail</th>
+        <th class="tg-0lax">Kategorie</th>
+        <th class="tg-0lax">Kommentar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <f:for each="{feedbacks}" as="feedback">
+        <tr>
+            <td class="tg-0lax">{feedback.name}</td>
+            <td class="tg-0lax">{feedback.email}</td>
+            <td class="tg-0lax">{feedback.category}</td>
+            <td class="tg-0lax">{feedback.comentar}</td>
+        </tr>
+    </f:for>
+    </tbody>
+</table>

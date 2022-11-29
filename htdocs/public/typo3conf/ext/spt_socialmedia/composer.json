@@ -1,0 +1,25 @@
+{
+  "name": "spt/spt_socialmedia",
+  "authors": [
+    {
+      "name": "TYPO3 Core Team",
+      "role": "Developer"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Autohaus central Extension",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "VENDOR\\Autohaus\\": "Classes/"
+    }
+  },
+  "require": {
+    "typo3/cms-core": ">=10.4 <11.0.0"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "spt_socialmedia"
+    }
+  }
+}

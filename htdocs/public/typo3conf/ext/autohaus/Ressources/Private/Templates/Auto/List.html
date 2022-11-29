@@ -1,0 +1,17 @@
+<div class="autos-list" xmlns:f="http://www.w3.org/1999/html">
+    <f:widget.paginate objects="{autos}" as="paginatedList" configuration="{ itemsPerPage: 4, insertAbove: 1, insertBelow: 1, maximumNumberOfLinks: 10}">
+        <f:for each="{paginatedList}" as="auto">
+            <p><f:link.action action="detail" arguments="{auto:auto.uid}">{auto.model}</f:link.action></p>
+            <p>{auto.production_year}</p>
+            <p>{auto.price}</p>
+            <p><f:if condition="{auto.sold}"><f:then>Verkauft</f:then><f:else>Verfügbar</f:else></f:if></p>
+            <f:media file="{auto.videoPresentation.0}"/>
+            <f:image image="{auto.image.0}" />
+        </f:for>
+    </f:widget.paginate>
+</div>
+
+
+
+
+

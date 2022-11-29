@@ -1,0 +1,65 @@
+.detail{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.legende{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.booked-status{
+    padding: 10px;
+    background-color: grey;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.notbooked-status{
+    padding: 10px;
+    background-color: orange;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.timeslots{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    row-gap: 10px;
+
+
+}
+.month{
+    background-color: lightgrey;
+    padding: 5px;
+}
+.day{
+    border-style: solid;
+    border-color: orange;
+    border-width: 2px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    margin-bottom: 5px;
+}
+.timeslot{
+    background-color: orange;
+    padding: 7px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+.timeslot-booked{
+    background-color: grey;
+    padding: 7px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}

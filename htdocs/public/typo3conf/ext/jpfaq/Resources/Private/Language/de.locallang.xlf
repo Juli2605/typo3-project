@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2016-09-20T12:43:58Z" product-name="jpfaq">
+        <header/>
+        <body>
+            <trans-unit id="tx_jpfaq_domain_model_question">
+                <target>Frage</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.question">
+                <target>Frage</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.answer">
+                <target>Antwort</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.categories">
+                <target>Kategorien</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_category">
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_category.category">
+                <target>Kategorie</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_category.description">
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="jpfaq_showAll">
+                <target>Alle Antworten einblenden</target>
+            </trans-unit>
+            <trans-unit id="jpfaq_hideAll">
+                <target>Alle Antworten ausblenden</target>
+            </trans-unit>
+            <trans-unit id="jpfaq_searchboxLabel">
+                <target>Schnellsuche FAQ</target>
+            </trans-unit>
+            <trans-unit id="jpfaq_filterCount">
+                <target>Anzahl der gefundenen Fragen: </target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.helpfulText">
+                <target>War diese Antwort hilfreich?</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.helpful">
+                <target>Ja</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_question.notHelpful">
+                <target>Nein</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_category_commentform_trigger_intro">
+                <target>Konnten wir Ihre Frage nicht beantworten?</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_category_commentform_trigger_linktext">
+                <target>Welche Information fehlt Ihrer Meinung nach?</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_category_commentform_intro">
+                <target>Bitte sagen Sie uns, was Ihnen gefehlt hat.</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_category_commentform_intro2">
+                <target>Damit helfen Sie uns, die Antworten zu verbessern.</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_categorycomment.name">
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_categorycomment.email">
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_categorycomment.comment">
+                <target>Anmerkung</target>
+            </trans-unit>
+            <trans-unit id="jpfaq_answerIsHelpfulThankYouText">
+                <target>Danke für Ihre Unterstützung</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_question_commentform_intro">
+                <target>Bitte sagen Sie uns, was Ihnen gefehlt hat.</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_question_commentform_intro2">
+                <target>Damit helfen Sie uns, diese Antwort zu verbessern.</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_questioncomment.name">
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_questioncomment.email">
+                <target>E-Mail</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_domain_model_questioncomment.comment">
+                <target>Anmerkung</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_submit_comment">
+                <target>Absenden</target>
+            </trans-unit>
+            <trans-unit id="tx_jpfaq_comment_thanks">
+                <target>Vielen Dank! Wir haben Ihre Anmerkung erhalten.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

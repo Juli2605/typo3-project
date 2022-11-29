@@ -1,0 +1,12 @@
+page{
+    logo {
+        # cat=bootstrap package: logo/110/100; type=string; label=Logo: Leave blank to use website title from template instead
+        file = EXT:autohaus/Ressources/Public/Image/test.jpg
+        # cat=bootstrap package: logo/110/110; type=string; label=Logo Inverted: Leave blank to use website title from template instead
+        fileInverted = EXT:autohaus/Ressources/Public/Image/test.jpg
+    }
+
+}
+#cat = Autohaus//10; type=int+; label = Verfügbare Mitarbeiter
+plugin.tx_autohaus.settings.workersAtTime = 2
+

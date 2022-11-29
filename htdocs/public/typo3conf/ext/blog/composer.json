@@ -1,0 +1,115 @@
+{
+    "name": "t3g/blog",
+    "description": "This blog extension uses TYPO3s core concepts and elements to provide a full-blown blog that users of TYPO3 can instantly understand and use.",
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "TYPO3 GmbH",
+            "role": "Developer",
+            "homepage": "https://typo3.com/"
+        }
+    ],
+    "homepage": "https://extensions.typo3.org/extension/blog/",
+    "support": {
+        "issues": "https://github.com/TYPO3GmbH/blog/issues",
+        "docs": "https://docs.typo3.org/typo3cms/extensions/blog/",
+        "source": "https://github.com/TYPO3GmbH/blog",
+        "slack": "https://typo3.slack.com/archives/t3g-ext-blog"
+    },
+    "autoload": {
+        "psr-4": {
+            "T3G\\AgencyPack\\Blog\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "T3G\\AgencyPack\\Blog\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "bin-dir": ".build/bin",
+        "discard-changes": true,
+        "optimize-autoloader": true,
+        "vendor-dir": ".build/vendor"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "blog",
+            "web-dir": ".build/web",
+            "app-dir": ".build"
+        },
+        "branch-alias": {
+            "dev-v11.0": "11.0.x-dev"
+        }
+    },
+    "scripts": {
+        "t3g:test:php:lint": [
+            "phplint"
+        ],
+        "t3g:test:php:unit": [
+            "phpunit -c Build/UnitTests.xml"
+        ],
+        "t3g:test:php:functional": [
+            "phpunit -c Build/FunctionalTests.xml"
+        ],
+        "t3g:test:php:unit:cover": [
+            "Composer\\Config::disableProcessTimeout",
+            "mkdir -p var/log/junit/ && phpunit -c Build/UnitTests.xml --log-junit var/log/junit/phpunit.xml --coverage-clover var/log/junit/coverage-unit.xml"
+        ],
+        "t3g:test:php:functional:cover": [
+            "Composer\\Config::disableProcessTimeout",
+            "mkdir -p var/log/junit/ && .build/bin/phpunit -c Build/FunctionalTests.xml --log-junit var/log/junit/phpunit.xml --coverage-clover var/log/junit/coverage-functional.xml"
+        ],
+        "t3g:test": [
+            "@t3g:test:php:lint",
+            "@t3g:test:php:unit"
+        ],
+        "t3g:cgl": [
+            "php-cs-fixer --diff -v fix"
+        ],
+        "post-autoload-dump": [
+            "mkdir -p .build/web/typo3conf/ext/",
+            "[ -L .build/web/typo3conf/ext/blog ] || ln -snvf ../../../../. .build/web/typo3conf/ext/blog"
+        ]
+    },
+    "suggest": {
+        "bk2k/bootstrap-package": "Theme for TYPO3",
+        "typo3/cms-fluid-styled-content": "Content rendering definition based on fluid"
+    },
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "psr/http-message": "^1.0",
+        "typo3/cms-backend": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-core": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-extbase": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-extensionmanager": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-fluid": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-form": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-frontend": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-install": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3fluid/fluid": "^2.6",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0"
+    },
+    "require-dev": {
+        "typo3/cms-belog": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-beuser": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-seo": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-filelist": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-fluid-styled-content": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-lowlevel": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-setup": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-tstemplate": "^10.4 || ^11.5 || 11.*.*@dev",
+        "typo3/cms-rte-ckeditor": "^10.4 || ^11.5 || 11.*.*@dev",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "typo3/testing-framework": "^6.4",
+        "bk2k/bootstrap-package": "^12",
+        "bk2k/extension-helper": "^1.0",
+        "overtrue/phplint": "^2.4"
+    }
+}

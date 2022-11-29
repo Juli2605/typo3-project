@@ -1,0 +1,28 @@
+{
+  "name": "vendor/autohaus",
+  "authors": [
+    {
+      "name": "TYPO3 Core Team",
+      "role": "Developer"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Autohaus central Extension",
+  "license": "GPL-2.0-or-later",
+  "autoload": {
+    "psr-4": {
+      "VENDOR\\Autohaus\\": "Classes/"
+    }
+  },
+  "require": {
+    "typo3/cms-core": ">=10.4 <11.0.0",
+    "bk2k/bootstrap-package": "12.0.5",
+    "jvdp/jpfaq": "10.4.1"
+
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "autohaus"
+    }
+  }
+}

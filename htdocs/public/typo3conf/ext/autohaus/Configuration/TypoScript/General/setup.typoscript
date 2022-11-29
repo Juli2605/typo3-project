@@ -1,0 +1,41 @@
+page {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths.10 = EXT:autohaus/Resources/Private/Templates/Page/
+        partialRootPaths.10 = EXT:autohaus/Resources/Private/Partials/Page/
+        layoutRootPaths.10 = EXT:autohaus/Resources/Private/Layouts/Page/
+
+        settings {
+        }
+
+        variables {
+        }
+    }
+
+    includeCSS{
+        auto = EXT:autohaus/Ressources/Public/CSS/auto.css
+    }
+}
+
+plugin.tx_autohaus{
+    view{
+        templateRootPaths = EXT:autohaus/Ressources/Private/Templates/
+        partialRootPaths = EXT:autohaus/Ressources/Private/Partials/
+        layoutRootPaths = EXT:autohaus/Ressources/Private/Layouts/
+    }
+
+    settings{
+        workersAtTime = {$plugin.tx_autohaus.settings.workersAtTime}
+        pageLogo = {$page.logo.file}
+    }
+}
+
+module.tx_autohaus {
+    view {
+        templateRootPaths = EXT:autohaus/Ressources/Private/Templates/
+        partialRootPaths = EXT:autohaus/Ressources/Private/Partials/
+        layoutRootPaths = EXT:autohaus/Ressources/Private/Layouts/
+    }
+}
+
+config.contentObjectExceptionHandler = 0

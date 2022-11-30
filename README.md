@@ -1,6 +1,6 @@
-# About
-Implementation of different backend requirements and ideas to the functionality of a car dealers website.
+# 
+Umsetzung verschiedener Backend-Anforderungen und Ideen zur Verbesserung einer Autohaus-Website.
 
-# Note
-Please note that the only extension builded from the author is the 'autohaus' extension under htdocs/public/typo3conf/ext. The other packages are imported from TER in order to fullfill the projects main requirements. To get to know the project objectives and solutions suggested please consider the scientific work file on the top level folder: Thesis.pdf.
+# Notiz
+Bitte beachten Sie, dass die einzige vom Autor erstellte Erweiterung die „autohaus“ unter htdocs/public/typo3conf/ext ist. Die anderen Pakete werden aus TER importiert, um die Hauptanforderungen des Projekts zu erfüllen. Um die Projektziele und Lösungsvorschläge kennenzulernen, beachten Sie bitte die wissenschaftliche Arbeitsdatei im Ordner der obersten Ebene: Thesis.pdf.
 

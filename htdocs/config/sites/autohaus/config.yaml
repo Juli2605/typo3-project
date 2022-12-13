@@ -1,4 +1,4 @@
-base: 'http://typo3-jul-ba-dev72.form4.de/public/autohaus'
+base: 'http://typo3-jul-ba-localhost/public/autohaus'
 languages:
   -
     title: English
